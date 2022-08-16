@@ -1,5 +1,5 @@
 # Stable Diffusion Prompt Manipulator
-![alt text](https://i.imgur.com/PTpXDIx.png)
+![alt text](https://i.imgur.com/yPRZhfL.png)
 
 ## Sliders
 Use sliders to adjust CFG_scale, Steps, and number of images.
