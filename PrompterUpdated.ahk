@@ -37,7 +37,7 @@ Gui Add, DropDownList, x305 y86 w105 vSamp, SAMPLER||k_euler|k_euler_ancestral|k
 Gui Add, DropDownList, x474 y115 w68 vShortAspect gStarter, 1:1||16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
 Gui Add, Edit, x412 y115 w60 h28 hwndEdit3 vCustomRes gCusRes
 EM_SETCUEBANNER(Edit3, "RES")
-Gui, Add, DropDownList, x544 y115 w100 vAspectRatiosFull, 512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
+Gui, Add, DropDownList, x544 y115 w100 vAspectRatiosFull, 64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512||576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
 Gui Add, Button, x411 y85 w78 h30 vSendP gSend, SEND
 Gui Add, Button, x567 y85 w78 h30 vResetP gReset, RESET
 Gui Add, Button, x489 y85 w78 h30 vCopy gCopy, COPY
@@ -91,7 +91,7 @@ Reset:
 	GuiControl,, Seed, 
 	GuiControl,, CustomRes,
 	GuiControl,, ShortAspect, |1:1||16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
-	GuiControl,, AspectRatiosFull, |512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
+	GuiControl,, AspectRatiosFull, |64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512||576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
 	GuiControl,, Samp, |SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
 	GuiControl,, Prompt, 
 	return	
