@@ -1,4 +1,4 @@
-﻿
+
  
 ;     888                                                               888  888   888888888   .d8888b.   .d8888b.   d888   
 ;     888                                                               888  888   888        d88P  Y88b d88P  Y88b d8888   
@@ -24,24 +24,24 @@ CusResCounter := 0
 Gui, Font, s13
 SetBatchLines -1
 SetTimer, Smit, 10
-Gui Add, Edit, x6 y3 w638 h58 vPrompt
-Gui Add, Slider, x0 y85 w100 h29 Range-20-20 Tickinterval5 vSli1, 7
-Gui Add, Slider, x100 y85 w101 h29 Range1-50 Tickinterval5 vSli2, 50
-Gui Add, Slider, x200 y85 w100 h29 Range1-4 Tickinterval1 vSli3, 4
-Gui Add, Edit, x305 y93 w105 h28 hwndEdit2 vSeed,
+Gui Add, Edit, x6 y3 w638 h80 vPrompt
+Gui Add, Slider, x0 y107 w100 h29 Range-20-20 Tickinterval5 vSli1, 7
+Gui Add, Slider, x100 y107 w101 h29 Range1-50 Tickinterval5 vSli2, 50
+Gui Add, Slider, x200 y107 w100 h29 Range1-4 Tickinterval1 vSli3, 4
+Gui Add, Edit, x305 y115 w105 h28 hwndEdit2 vSeed,
 EM_SETCUEBANNER(Edit2, "SEED")
-Gui Add, Text, x10 y64 w188 h23 vCfg, CFG_S: 7
-Gui Add, Text, x107 y64 w168 h23 vSTEPS, STEPS: 50
-Gui Add, Text, x207 y64 w90 h23 vNum, IMAGES: 4
-Gui Add, DropDownList, x305 y64 w105 vSamp, SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
-Gui Add, DropDownList, x474 y93 w68 vShortAspect gStarter, 1:1||32:9|21:9|16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
-Gui Add, Edit, x412 y93 w60 h28 hwndEdit3 vCustomRes gCusRes
+Gui Add, Text, x10 y86 w188 h23 vCfg, CFG_S: 7
+Gui Add, Text, x107 y86 w168 h23 vSTEPS, STEPS: 50
+Gui Add, Text, x207 y86 w90 h23 vNum, IMAGES: 4
+Gui Add, DropDownList, x305 y86 w105 vSamp, SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
+Gui Add, DropDownList, x474 y115 w68 vShortAspect gStarter, 1:1||16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
+Gui Add, Edit, x412 y115 w60 h28 hwndEdit3 vCustomRes gCusRes
 EM_SETCUEBANNER(Edit3, "RES")
-Gui, Add, DropDownList, x544 y93 w100 vAspectRatiosFull, 512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
-Gui Add, Button, x411 y63 w78 h30 vSendP gSend, SEND
-Gui Add, Button, x567 y63 w78 h30 vResetP gReset, RESET
-Gui Add, Button, x489 y63 w78 h30 vCopy gCopy, COPY
-Gui Show, w650 h127, Prompter
+Gui, Add, DropDownList, x544 y115 w100 vAspectRatiosFull, 512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
+Gui Add, Button, x411 y85 w78 h30 vSendP gSend, SEND
+Gui Add, Button, x567 y85 w78 h30 vResetP gReset, RESET
+Gui Add, Button, x489 y85 w78 h30 vCopy gCopy, COPY
+Gui Show, w650 h149, Prompter
 
 return
 
@@ -90,7 +90,7 @@ Reset:
 	GuiControl,, Sli3, 4
 	GuiControl,, Seed, 
 	GuiControl,, CustomRes,
-	GuiControl,, ShortAspect, |1:1||32:9|21:9|16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
+	GuiControl,, ShortAspect, |1:1||16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
 	GuiControl,, AspectRatiosFull, |512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
 	GuiControl,, Samp, |SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
 	GuiControl,, Prompt, 
@@ -216,7 +216,7 @@ Copy:
 			{
 				FinalPrompt = %FinalPrompt% -S %Seed%
 			}
-			if Samp = MODEL
+			if Samp = SAMPLER
 			{
 				
 			}
