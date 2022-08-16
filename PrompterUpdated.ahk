@@ -92,7 +92,7 @@ Reset:
 	GuiControl,, CustomRes,
 	GuiControl,, ShortAspect, |1:1||32:9|21:9|16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
 	GuiControl,, AspectRatiosFull, |512x512||64x64|128x128|192x192|256x256|320x320|384x384|448x448|512x512|576x576|640x640|704x704|768x768|832x832|896x896|960x960|1024x1024
-	GuiControl,, Samp, |MODEL||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
+	GuiControl,, Samp, |SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
 	GuiControl,, Prompt, 
 	return	
 }
