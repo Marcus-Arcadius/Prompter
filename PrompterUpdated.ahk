@@ -33,7 +33,7 @@ EM_SETCUEBANNER(Edit2, "SEED")
 Gui Add, Text, x10 y64 w188 h23 vCfg, CFG_S: 7
 Gui Add, Text, x107 y64 w168 h23 vSTEPS, STEPS: 50
 Gui Add, Text, x207 y64 w90 h23 vNum, IMAGES: 4
-Gui Add, DropDownList, x305 y64 w105 vSamp, MODEL||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
+Gui Add, DropDownList, x305 y64 w105 vSamp, SAMPLER||k_euler|k_euler_ancestral|k_heun|k_dpm_2|k_dpm_2_ancestral|ddim|plms|
 Gui Add, DropDownList, x474 y93 w68 vShortAspect gStarter, 1:1||32:9|21:9|16:9|9:16|16:10|2:3|4:3|4:5|1:2|2:1|
 Gui Add, Edit, x412 y93 w60 h28 hwndEdit3 vCustomRes gCusRes
 EM_SETCUEBANNER(Edit3, "RES")
