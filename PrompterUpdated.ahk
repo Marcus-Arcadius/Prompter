@@ -237,7 +237,7 @@ EM_SETCUEBANNER(hWnd, Cue)
 	return DllCall("user32.dll\SendMessage", "Ptr", hWnd, "UInt", 0x1501, "Ptr", 1, "Ptr", &Cue, "Ptr")
 }
 ;dapooper#5601
-#IfWinActive, WinTitleOfYourAppHere
+#IfWinActive, Prompter
 Up::return
 Down::return
 return
