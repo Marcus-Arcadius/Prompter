@@ -1,4 +1,6 @@
 # Stable Diffusion Prompt Manipulator
+Compiled .exe can be found here https://github.com/Dapacaa/Prompter/releases/tag/v1.4
+
 ![alt text](https://i.imgur.com/yPRZhfL.png)
 
 ## Sliders
