@@ -20,4 +20,4 @@ Copies prompt to clipboard.
 Reset all parameters.
 
 ## Sampler
-Select Sampler you would like
+Select Sampler you would like.
