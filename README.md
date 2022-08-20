@@ -1,5 +1,5 @@
 # Stable Diffusion Prompt Manipulator
-Compiled .exe can be found here https://github.com/Dapacaa/Prompter/releases
+## Compiled .exe can be found here https://github.com/Dapacaa/Prompter/releases
 
 ![alt text](https://i.imgur.com/DaE0P2m.png)
 
