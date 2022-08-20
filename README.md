@@ -1,6 +1,6 @@
 # Stable Diffusion Prompt Manipulator
 ## Compiled .exe can be found here https://github.com/Dapacaa/Prompter/releases
-### Saving settings per saved prompt isn't a feature yet, i'm learning as im writing the script.
+### Saving settings per saved prompt isn't a feature yet, so automatic prompts will use the current settings selected but you should be able to change settings while it's running the automatic prompts (in between your delay) i'm learning as im writing the script so things are a bit messy.
 ![alt text](https://i.imgur.com/DaE0P2m.png)
 
 ## Settings:
