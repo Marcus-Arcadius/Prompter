@@ -19,4 +19,4 @@
 ## Settings:
 ### Add: Click add to open a window to add a prompt to the list, left side to pick from saved prompts or you can type a new prompt.
 ### Update/Delete: Click on any prompt saved to the list to open a window to update/delete a prompt.
-### Delay/Repeat/Start/Stop: Delay(Seconds) between prompts sent to discord, Repeat(Number of times to repeat each prompt on the list) and use Start and Stop to start sending prompts to discord.
+### Delay/Repeat/Start/Stop: Delay(Seconds) between prompts sent to discord, Repeat(Number of times to repeat each prompt on the list) and use Start and Stop to start sending prompts to discord. I noticed a issue with discord slow mode counting down from 1 minute but pausing every so often so you will need something like 70 second delay for now.
