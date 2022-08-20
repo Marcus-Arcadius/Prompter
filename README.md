@@ -1,6 +1,6 @@
 # Stable Diffusion Prompt Manipulator
 ## Compiled .exe can be found here https://github.com/Dapacaa/Prompter/releases
-
+### Saving settings per saved prompt isn't a feature yet
 ![alt text](https://i.imgur.com/DaE0P2m.png)
 
 ## Settings:
